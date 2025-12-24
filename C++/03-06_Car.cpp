@@ -3,9 +3,10 @@
 #include "03-06_Car.h"
 using namespace std;
 
-// 클래서의 선언은 클래스명.h
+// 클래스의 선언은 클래스명.h
 // 클래스의 구현은 클래스명.cpp
 // 실행은 main.cpp
+// ★ (암기) 함수 정의시에 Car::를 붙이는 이유 Car 클래스에 있는 InitMembers()함수를 클래스 외부에서 정의한다는 뜻
 void Car::InitMembers(const char* ID, int fuel)
 {
 	strcpy_s(gamerID, sizeof(gamerID), ID);
